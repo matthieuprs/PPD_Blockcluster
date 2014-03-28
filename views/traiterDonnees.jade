@@ -1,0 +1,23 @@
+﻿extends layout
+
+block content
+  p Corpus à ajouter (en .txt à la racine du zip)
+  form(name="input", action="/traitDon/form", method="get")
+      p Ajout de fichier   
+      input(type="file", name="fileUpload")
+      br
+      p Nom du corpus
+      input(type="text", name="corpusName")
+      p Descriptif
+      input(type="text", name="description")
+      br
+      input(type="submit", value="OK")
+  br
+  p Liste des corpus disponibles
+  //- listeCorpus = {1: "Aurelien noob", 2: "matthieu noob"};
+  #listeCorpus
+  p
+    select(name="corpus")
+      option(value="") -- Select Corpus --
+      option(value="#{listeCorpus.id}") -- #{listeCorpus.name} --
+
