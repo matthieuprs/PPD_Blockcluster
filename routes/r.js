@@ -28,8 +28,7 @@ terminal.on('exit', function (code) {
 
 setTimeout(function() {
     console.log('Sending stdin to terminal');
-    terminal.stdin.write("cd \"C:\Program Files\R\R-3.0.2\bin\"\n");
-    terminal.stdin.write("\"C:\Program Files\R\R-3.0.2\bin\Rscript.exe\" \"C:\Users\jordan\Documents\GitHub\PPD_Blockcluster\r\blockcluster.R\" \"C:\Users\jordan\Documents\GitHub\PPD_Blockcluster\r\test.csv\" \"C:\Users\jordan\Documents\GitHub\PPD_Blockcluster\r\json.txt\" 3 2\n");
+    terminal.stdin.write('"C:\\Program Files\\R\\R-3.0.2\\bin\\Rscript.exe" "C:\\Users\\jordan\\Documents\\GitHub\\PPD_Blockcluster\\r\\blockcluster.R" "C:\\Users\\jordan\\Documents\\GitHub\\PPD_Blockcluster\\r\\test.csv" "C:\\Users\\jordan\\Documents\\GitHub\\PPD_Blockcluster\\r\\json.txt" 3 2 \\n');
     console.log('Ending terminal session');
     terminal.stdin.end();
 }, 1000);
