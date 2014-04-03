@@ -1,0 +1,1 @@
+Rscript "C:\Users\jordan\Documents\GitHub\PPD_Blockcluster\r\blockcluster.R" "C:\Users\jordan\Documents\GitHub\PPD_Blockcluster\r\test.csv" "C:\Users\jordan\Documents\GitHub\PPD_Blockcluster\r\json.txt" 3 2
